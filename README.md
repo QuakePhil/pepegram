@@ -1,3 +1,4 @@
+```
 <?php
 
 $email = $_GET['email'];
@@ -11,3 +12,4 @@ if (filter_var($sanitized, FILTER_VALIDATE_EMAIL)) {
 }
 
 ?>
+```
