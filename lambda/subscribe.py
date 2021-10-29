@@ -23,7 +23,7 @@ def subscribe(event):
     boto3.resource("s3").Bucket("pepegram").put_object(Key="subscribe/"+email, Body=encoded_string)
     return {
         'statusCode': 200,
-        'body': json.dumps(email)
+        'body': 'Subscribed: ' + email # json.dumps(email)
     }
 
 def lambda_handler(event, context):
