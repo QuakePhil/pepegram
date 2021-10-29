@@ -1,4 +1,4 @@
-# pepegram-email/lambda_function.py
+# pepegram-subscribe/lambda_function.py
 import boto3, re, json
 
 def sanitize(email):
